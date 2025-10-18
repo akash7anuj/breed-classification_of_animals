@@ -4,7 +4,7 @@
 
 This project is an **AI-powered cattle breed detection system** that identifies Indian bovine breeds (cows and buffaloes) from images and displays the results on a **web-based dashboard** in real-time. It combines **deep learning (ResNet50)** for breed classification and **YOLOv8** for object detection.
 
-![Indian Bovine Breeds Detection System](image\dashboard.png)
+![Indian Bovine Breeds Detection System](image/dashboard.png)
 ---
 
 ## 🎯 Objective
