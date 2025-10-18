@@ -13,11 +13,11 @@ from torch.utils.data import DataLoader
 # ---------------------------
 # CONFIG
 # ---------------------------
-DATASET_DIR = "dataset/train"   # apne dataset ka path yaha do
+DATASET_DIR = "dataset_split/train"   # apne dataset ka path yaha do
 MIN_SIZE = 128                  # minimum resolution
 BLUR_THRESHOLD = 100            # blur detection threshold
 RESIZE_SHAPE = (224, 224)       # consistent size for all images
-CLEANED_DIR = "dataset_cleaned" # cleaned dataset save hoga
+CLEANED_DIR = "train_cleaned" # cleaned dataset save hoga
 
 # ---------------------------
 # 1. Remove Duplicate Images
@@ -156,8 +156,8 @@ if __name__ == "__main__":
     print("🔹 Starting Data Cleaning Pipeline...")
     remove_duplicates(DATASET_DIR)
     remove_blurry(DATASET_DIR)
-    clean_small_and_corrupt(DATASET_DIR)
+    # clean_small_and_corrupt(DATASET_DIR)
     resize_and_standardize(DATASET_DIR, CLEANED_DIR)
-    visualize_samples(CLEANED_DIR)
+    # visualize_samples(CLEANED_DIR)
     balance_dataset(CLEANED_DIR)
     print("🎉 Data cleaning completed successfully!")

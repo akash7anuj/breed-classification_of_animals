@@ -36,7 +36,7 @@ val_test_transform = transforms.Compose([
 # -------------------------
 # LOAD DATA
 # -------------------------
-train_dataset = datasets.ImageFolder(f"{DATASET_DIR}/train", transform=train_transform)
+train_dataset = datasets.ImageFolder(f"{DATASET_DIR}/train_cleaned", transform=train_transform)
 val_dataset   = datasets.ImageFolder(f"{DATASET_DIR}/val", transform=val_test_transform)
 test_dataset  = datasets.ImageFolder(f"{DATASET_DIR}/test", transform=val_test_transform)
 

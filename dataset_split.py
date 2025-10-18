@@ -3,7 +3,7 @@ import shutil
 import random
 
 # Paths
-DATASET_DIR = "dataset_cleaned"   # cleaned dataset ka folder
+DATASET_DIR = "Indian_bovine_breeds"   # cleaned dataset ka folder
 OUTPUT_DIR = "dataset_split"      # new folder jisme train/val/test hoga
 
 # Split ratios
